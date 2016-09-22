@@ -49,7 +49,7 @@ records.each do |r|
   record["date_scraped"]      = Date.today.to_s
   record["date_received"]     = Date.strptime(r.at("Lodged")["org_value"], '%d/%m/%Y').to_s
 
-  if ( !record.has_blank? )
+  unless record.has_blank?
     if (ScraperWiki.select("* from data where `council_reference`='#{record['council_reference']}'").empty? rescue true)
       puts "Saving record " + record['council_reference'] + ", " + record['address']
       # puts record
