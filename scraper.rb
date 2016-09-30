@@ -40,9 +40,13 @@ page = agent.get(data_url)
 records = page.search("//row")
 
 records.each do |r|
+  unless r.at("Property")["org_value"].empty?
+    street_address = r.at("Property")["org_value"] + " NSW"
+  end
+
   record = {}
   record["council_reference"] = r.at("AccountNumber")["org_value"]
-  record["address"]           = r.at("Property")["org_value"]
+  record["address"]           = street_address
   record["description"]       = r.at("Description")["org_value"]
   record["info_url"]          = base_url
   record["comment_url"]       = comment_url
