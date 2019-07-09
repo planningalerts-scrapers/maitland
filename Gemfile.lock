@@ -7,6 +7,14 @@ GIT
       httpclient
       sqlite_magic
 
+GIT
+  remote: https://github.com/planningalerts-scrapers/horizon_xml.git
+  revision: 5376b545398960cf96b81ccdd39ea93580b01cb8
+  specs:
+    horizon_xml (1.1.1)
+      mechanize
+      scraperwiki
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -15,7 +23,7 @@ GEM
     connection_pool (2.2.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
-    domain_name (0.5.20180417)
+    domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     hashdiff (0.4.0)
     http-cookie (1.0.3)
@@ -32,13 +40,13 @@ GEM
       webrobots (>= 0.0.9, < 0.2)
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2018.0812)
-    mini_portile2 (2.3.0)
+    mime-types-data (3.2019.0331)
+    mini_portile2 (2.4.0)
     net-http-digest_auth (1.4.1)
-    net-http-persistent (3.0.0)
+    net-http-persistent (3.0.1)
       connection_pool (~> 2.2)
-    nokogiri (1.8.5)
-      mini_portile2 (~> 2.3.0)
+    nokogiri (1.10.3)
+      mini_portile2 (~> 2.4.0)
     ntlm-http (0.1.1)
     public_suffix (3.1.1)
     safe_yaml (1.0.5)
@@ -48,7 +56,7 @@ GEM
     timecop (0.9.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.5)
+    unf_ext (0.0.7.6)
     vcr (5.0.0)
     webmock (3.6.0)
       addressable (>= 2.3.6)
@@ -60,7 +68,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mechanize
+  horizon_xml!
   scraperwiki!
   timecop
   vcr
