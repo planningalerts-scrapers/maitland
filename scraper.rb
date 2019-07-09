@@ -16,22 +16,9 @@ comment_url = "mailto:info@maitland.nsw.gov.au"
 
 time = Time.new
 
-case ENV['MORPH_PERIOD']
-  when 'lastmonth'
-    dateFrom = (Date.new(time.year, time.month, 1) << 1).strftime('%d/%m/%Y')
-    dateTo   = (Date.new(time.year, time.month, 1)-1).strftime('%d/%m/%Y')
-    data_url = lastmonth
-  when 'thismonth'
-    dateFrom = Date.new(time.year, time.month, 1).strftime('%d/%m/%Y')
-    dateTo   = Date.new(time.year, time.month, -1).strftime('%d/%m/%Y')
-    data_url = thismonth
-  else
-    dateFrom = (Date.new(time.year, time.month, time.day)-7).strftime('%d/%m/%Y')
-    dateTo   = Date.new(time.year, time.month, time.day).strftime('%d/%m/%Y')
-    data_url = thisweek
-end
-
-puts "Scraping from " + dateFrom + " to " + dateTo + ", changable via MORPH_PERIOD variable"
+dateFrom = Date.new(time.year, time.month, 1).strftime('%d/%m/%Y')
+dateTo   = Date.new(time.year, time.month, -1).strftime('%d/%m/%Y')
+data_url = thismonth
 
 agent = Mechanize.new
 page = agent.get(base_url)

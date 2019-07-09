@@ -31,7 +31,7 @@ http_interactions:
       Server:
       - nginx/1.14.2
       Date:
-      - Mon, 08 Jul 2019 23:25:18 GMT
+      - Tue, 09 Jul 2019 02:16:58 GMT
       Content-Type:
       - text/html;charset=UTF-8
       Transfer-Encoding:
@@ -43,7 +43,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 10:00:00 AEST
       Set-Cookie:
-      - JSESSIONID=5E8583209CDED45E655C6E4FFE707EB0; Path=/Horizon; Secure; HttpOnly
+      - JSESSIONID=D61C1057AB24F44DED6135EF63BFBB28; Path=/Horizon; Secure; HttpOnly
       Content-Encoding:
       - gzip
     body:
@@ -54,7 +54,7 @@ http_interactions:
   recorded_at: Tue, 14 May 2019 14:00:00 GMT
 - request:
     method: get
-    uri: https://myhorizon.maitland.nsw.gov.au/Horizon/urlRequest.aw?actionType=run_query_action&pageSize=100&query_name=Application_LodgedThisWeek&query_string=FIND%20Applications%20WHERE%20Applications.ApplicationTypeID.IsAvailableOnline=%27Yes%27%20AND%20Applications.CanDisclose=%27Yes%27%20AND%20NOT(Applications.StatusName%20IN%20%27Pending%27,%20%27Cancelled%27)%20AND%20WEEK(Applications.Lodged)=CURRENT_WEEK-1%20AND%20YEAR(Applications.Lodged)=CURRENT_YEAR%20AND%20Application.ApplicationTypeID.Classification=%27Application%27%20ORDER%20BY%20Applications.Lodged%20DESC&skip=0&start=0&take=100
+    uri: https://myhorizon.maitland.nsw.gov.au/Horizon/urlRequest.aw?actionType=run_query_action&pageSize=100&query_name=Application_LodgedThisMonth&query_string=FIND%20Applications%20WHERE%20Applications.ApplicationTypeID.IsAvailableOnline=%27Yes%27%20AND%20Applications.CanDisclose=%27Yes%27%20AND%20NOT(Applications.StatusName%20IN%20%27Pending%27,%20%27Cancelled%27)%20AND%20MONTH(Applications.Lodged)=CURRENT_MONTH%20AND%20YEAR(Applications.Lodged)=CURRENT_YEAR%20AND%20Application.ApplicationTypeID.Classification=%27Application%27%20ORDER%20BY%20Applications.Lodged%20DESC&skip=0&start=0&take=100
     body:
       encoding: US-ASCII
       string: ''
@@ -70,7 +70,7 @@ http_interactions:
       Accept-Language:
       - en-us,en;q=0.5
       Cookie:
-      - JSESSIONID=5E8583209CDED45E655C6E4FFE707EB0
+      - JSESSIONID=D61C1057AB24F44DED6135EF63BFBB28
       Host:
       - myhorizon.maitland.nsw.gov.au
       Connection:
@@ -85,7 +85,7 @@ http_interactions:
       Server:
       - nginx/1.14.2
       Date:
-      - Mon, 08 Jul 2019 23:25:25 GMT
+      - Tue, 09 Jul 2019 02:17:29 GMT
       Content-Type:
       - text/xml;charset=UTF-8
       Transfer-Encoding:
@@ -101,8 +101,82 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "<?xml version='1.0' encoding='UTF-8' ?> \r\n<root> \r\n<run_query_action_return>
-        \r\n<run_query_action_success> \r\n<dataset> \r\n<total>11</total> \r\n<row>
-        \r\n<id>558497394</id> \r\n<BAS_REF_VALUE>Application:558497394</BAS_REF_VALUE>
+        \r\n<run_query_action_success> \r\n<dataset> \r\n<total>68</total> \r\n<row>
+        \r\n<id>558700702</id> \r\n<BAS_REF_VALUE>Application:558700702</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/583\"></EntryAccount> \r\n<Lodged org_value=\"09/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dual occupancy (attached), Dwelling house, Subdivision
+        - Torrens Title, Subdivision - Strata Title, Demolition\"></Details> \r\n<ApplicantName
+        org_value=\"Julie Anne Randell\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"37 Page Street  EAST MAITLAND  NSW  2323\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"5/99/758374\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"876000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558725401</id> \r\n<BAS_REF_VALUE>Application:558725401</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/584\"></EntryAccount> \r\n<Lodged org_value=\"09/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Swimming Pool\"></Details> \r\n<ApplicantName org_value=\"Robert
+        Andrew Strachan\"></ApplicantName> \r\n<PropertyDescription org_value=\"552
+        Luskintyre Road  LUSKINTYRE  NSW  2321\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"2/1177474\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"74397.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558716232</id> \r\n<BAS_REF_VALUE>Application:558716232</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CDC/2019/321\"></EntryAccount> \r\n<Lodged org_value=\"09/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Swimming Pool\"></Details> \r\n<ApplicantName org_value=\"Walter
+        Antidormi\"></ApplicantName> \r\n<PropertyDescription org_value=\"16 Whiteley
+        Avenue  METFORD  NSW  2323\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"49/862901\"></TitleDescription> \r\n<Determined org_value=\"09/07/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"29335.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558725116</id> \r\n<BAS_REF_VALUE>Application:558725116</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CDC/2019/322\"></EntryAccount> \r\n<Lodged org_value=\"09/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling alteration/addition (attached)\"></Details>
+        \r\n<ApplicantName org_value=\"Mary Carmen O'Connor\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"4 Ibis Parade  WOODBERRY  NSW  2322\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"145/240665\"></TitleDescription> \r\n<Determined org_value=\"09/07/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"47784.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558729277</id> \r\n<BAS_REF_VALUE>Application:558729277</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CDC/2016/2221:1\"></EntryAccount> \r\n<Lodged
+        org_value=\"09/07/2019\"></Lodged> \r\n<Details org_value=\"Single Storey
+        Dwelling, Remove Retaining Wall \"></Details> \r\n<ApplicantName org_value=\"Ranju
+        James\"></ApplicantName> \r\n<PropertyDescription org_value=\"76 Dragonfly
+        Drive  CHISHOLM  NSW  2322\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"2319/1219189\"></TitleDescription> \r\n<Determined org_value=\"09/07/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"336262.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558730948</id> \r\n<BAS_REF_VALUE>Application:558730948</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CDC/2019/324\"></EntryAccount> \r\n<Lodged org_value=\"09/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling house\"></Details> \r\n<ApplicantName org_value=\"Jessica
+        Louise Paczek\"></ApplicantName> \r\n<PropertyDescription org_value=\"2 Angelica
+        \ Road  CHISHOLM  NSW  2322\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"54/1240315\"></TitleDescription> \r\n<Determined org_value=\"27/06/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"293657.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558707067</id> \r\n<BAS_REF_VALUE>Application:558707067</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/554\"></EntryAccount> \r\n<Lodged org_value=\"09/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dual occupancy (attached)\"></Details> \r\n<ApplicantName
+        org_value=\"The Trustee For The Danandyl Trust \"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"30 Lancaster Street  THORNTON  NSW  2322\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"517/1248342\"></TitleDescription> \r\n<Determined
+        org_value=\"09/07/2019\"></Determined> \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"519900.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558708533</id> \r\n<BAS_REF_VALUE>Application:558708533</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/555\"></EntryAccount> \r\n<Lodged org_value=\"09/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dual occupancy (attached)\"></Details> \r\n<ApplicantName
+        org_value=\"Kenneth John Peek\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"34 Lancaster Street  THORNTON  NSW  2322\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"515/1248342\"></TitleDescription> \r\n<Determined
+        org_value=\"09/07/2019\"></Determined> \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"519900.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558723893</id> \r\n<BAS_REF_VALUE>Application:558723893</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/556\"></EntryAccount> \r\n<Lodged org_value=\"09/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Carport\"></Details> \r\n<ApplicantName org_value=\"Bobbie
+        David Kschischan\"></ApplicantName> \r\n<PropertyDescription org_value=\"12
+        Hunter Close  LOCHINVAR  NSW  2321\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"6/250821\"></TitleDescription> \r\n<Determined org_value=\"09/07/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"8885.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558497394</id> \r\n<BAS_REF_VALUE>Application:558497394</BAS_REF_VALUE>
         \r\n<EntryAccount org_value=\"DA/2019/579\"></EntryAccount> \r\n<Lodged org_value=\"08/07/2019\"></Lodged>
         \r\n<Details org_value=\"Dwelling house\"></Details> \r\n<ApplicantName org_value=\"Michael
         John Tansley\"></ApplicantName> \r\n<PropertyDescription org_value=\"3 Eldon
@@ -192,9 +266,393 @@ http_interactions:
         \r\n<TitleDescription org_value=\"302/1195506\"></TitleDescription> \r\n<Determined
         org_value=\"08/07/2019\"></Determined> \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode>
         \r\n<WorkValue org_value=\"136320.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558063432</id> \r\n<BAS_REF_VALUE>Application:558063432</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/573\"></EntryAccount> \r\n<Lodged org_value=\"05/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Subdivision - New Road\"></Details> \r\n<ApplicantName
+        org_value=\"Trustees Of The Roman Catholic Church\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"547 Raymond Terrace Road  CHISHOLM  NSW  2322\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"20/832786\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"0.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558069858</id> \r\n<BAS_REF_VALUE>Application:558069858</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/574\"></EntryAccount> \r\n<Lodged org_value=\"05/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Subdivision - New Road\"></Details> \r\n<ApplicantName
+        org_value=\"Sidley Pty Ltd\"></ApplicantName> \r\n<PropertyDescription org_value=\"547
+        Raymond Terrace Road  CHISHOLM  NSW  2322\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"21/832786\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"0.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558111151</id> \r\n<BAS_REF_VALUE>Application:558111151</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2017/1173:1\"></EntryAccount> \r\n<Lodged
+        org_value=\"05/07/2019\"></Lodged> \r\n<Details org_value=\"Section 4.55 (1A)
+        Modification - Reduction in Building Floor Area\"></Details> \r\n<ApplicantName
+        org_value=\"Gurpreet Singh Rai\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"2 Watervale Circuit  CHISHOLM  NSW  2322\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"360/1219726\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"850000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558132105</id> \r\n<BAS_REF_VALUE>Application:558132105</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/575\"></EntryAccount> \r\n<Lodged org_value=\"05/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Road\"></Details> \r\n<ApplicantName org_value=\"LendLease\"></ApplicantName>
+        \r\n<PropertyDescription org_value=\"361 Morpeth Road  MORPETH  NSW  2321\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"7/270740\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"439000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558142497</id> \r\n<BAS_REF_VALUE>Application:558142497</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/576\"></EntryAccount> \r\n<Lodged org_value=\"05/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Change of use of premises - Residential Home to Group
+        Home\"></Details> \r\n<ApplicantName org_value=\"Allan Leonard Webber\"></ApplicantName>
+        \r\n<PropertyDescription org_value=\"12 Cornwell Street  THORNTON  NSW  2322\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"420/1210092\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"0.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558150106</id> \r\n<BAS_REF_VALUE>Application:558150106</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/577\"></EntryAccount> \r\n<Lodged org_value=\"05/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Change of use of premises - Residential Home to Group
+        Home\"></Details> \r\n<ApplicantName org_value=\"Allan Leonard Webber\"></ApplicantName>
+        \r\n<PropertyDescription org_value=\"4 Lancaster Street  THORNTON  NSW  2322\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"502/1223095\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"0.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558156116</id> \r\n<BAS_REF_VALUE>Application:558156116</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/578\"></EntryAccount> \r\n<Lodged org_value=\"05/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Shed\"></Details> \r\n<ApplicantName org_value=\"Topline
+        Garages\"></ApplicantName> \r\n<PropertyDescription org_value=\"82 Ballydoyle
+        Drive  ASHTONFIELD  NSW  2323\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"1213/1045316\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"12051.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558144329</id> \r\n<BAS_REF_VALUE>Application:558144329</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/545\"></EntryAccount> \r\n<Lodged org_value=\"05/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling house\"></Details> \r\n<ApplicantName org_value=\"Stratum
+        Constructions Pty Ltd \"></ApplicantName> \r\n<PropertyDescription org_value=\"177A
+        Bolwarra Park Drive  BOLWARRA HEIGHTS  NSW  2320\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"211/1185346\"></TitleDescription> \r\n<Determined
+        org_value=\"04/07/2019\"></Determined> \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"320000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558145617</id> \r\n<BAS_REF_VALUE>Application:558145617</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/546\"></EntryAccount> \r\n<Lodged org_value=\"05/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling alteration/addition (attached)\"></Details>
+        \r\n<ApplicantName org_value=\"Matthew Peter Lindsay Farr-Forrest\"></ApplicantName>
+        \r\n<PropertyDescription org_value=\"6 Cockatoo Ridge  ABERGLASSLYN  NSW  2320\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"2903/1169722\"></TitleDescription> \r\n<Determined
+        org_value=\"05/07/2019\"></Determined> \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"8278.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558148501</id> \r\n<BAS_REF_VALUE>Application:558148501</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/547\"></EntryAccount> \r\n<Lodged org_value=\"05/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling house\"></Details> \r\n<ApplicantName org_value=\"Jackson
+        William Osborne\"></ApplicantName> \r\n<PropertyDescription org_value=\"4
+        Newfield Street  RUTHERFORD  NSW  2320\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"120/280047\"></TitleDescription> \r\n<Determined org_value=\"04/07/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"280521.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>558156158</id> \r\n<BAS_REF_VALUE>Application:558156158</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/548\"></EntryAccount> \r\n<Lodged org_value=\"05/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Shed\"></Details> \r\n<ApplicantName org_value=\"Topline
+        Garages\"></ApplicantName> \r\n<PropertyDescription org_value=\"82 Ballydoyle
+        Drive  ASHTONFIELD  NSW  2323\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"1213/1045316\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"12051.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557805334</id> \r\n<BAS_REF_VALUE>Application:557805334</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/569\"></EntryAccount> \r\n<Lodged org_value=\"04/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Patio Cover\"></Details> \r\n<ApplicantName org_value=\"Jody
+        Andrew Booth\"></ApplicantName> \r\n<PropertyDescription org_value=\"30 John
+        Verge Avenue  RUTHERFORD  NSW  2320\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"425/1051221\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"19900.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557812884</id> \r\n<BAS_REF_VALUE>Application:557812884</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/570\"></EntryAccount> \r\n<Lodged org_value=\"04/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling - Single Storey\"></Details> \r\n<ApplicantName
+        org_value=\"Owen Mhlanga\"></ApplicantName> \r\n<PropertyDescription org_value=\"2
+        Collaroy Parade  LOUTH PARK  NSW  2320\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"130/1251415\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"570760.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557863987</id> \r\n<BAS_REF_VALUE>Application:557863987</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/571\"></EntryAccount> \r\n<Lodged org_value=\"04/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling alteration/addition (attached)\"></Details>
+        \r\n<ApplicantName org_value=\"Karl Ernest Bagnall\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"21 Young Street  EAST MAITLAND  NSW  2323\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"91/857970\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"40000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557924588</id> \r\n<BAS_REF_VALUE>Application:557924588</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/572\"></EntryAccount> \r\n<Lodged org_value=\"04/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Secondary dwelling, Subdivision - Torrens Title\"></Details>
+        \r\n<ApplicantName org_value=\"MONTEATH &amp; POWYS PTY LTD\"></ApplicantName>
+        \r\n<PropertyDescription org_value=\"7 Rebecca Close  RUTHERFORD  NSW  2320\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"312/817435\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"300000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557786966</id> \r\n<BAS_REF_VALUE>Application:557786966</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CDC/2019/317\"></EntryAccount> \r\n<Lodged org_value=\"04/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling house\"></Details> \r\n<ApplicantName org_value=\"Oracle
+        Building Corporation\"></ApplicantName> \r\n<PropertyDescription org_value=\"18
+        Friarbird Ridge  ABERGLASSLYN  NSW  2320\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"4418/1248748\"></TitleDescription> \r\n<Determined org_value=\"03/07/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"294750.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557796270</id> \r\n<BAS_REF_VALUE>Application:557796270</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CDC/2019/318\"></EntryAccount> \r\n<Lodged org_value=\"04/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling house\"></Details> \r\n<ApplicantName org_value=\"Warick
+        Booth\"></ApplicantName> \r\n<PropertyDescription org_value=\"15 Collaroy
+        Parade  LOUTH PARK  NSW  2320\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"110/1251415\"></TitleDescription> \r\n<Determined org_value=\"02/07/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"436500.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557821876</id> \r\n<BAS_REF_VALUE>Application:557821876</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CDC/2019/319\"></EntryAccount> \r\n<Lodged org_value=\"04/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Swimming Pool\"></Details> \r\n<ApplicantName org_value=\"Jeremy
+        Jeffrey Little\"></ApplicantName> \r\n<PropertyDescription org_value=\"7 Vantage
+        Court  BOLWARRA  NSW  2320\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"105/1213455\"></TitleDescription> \r\n<Determined org_value=\"04/07/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"24000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557805487</id> \r\n<BAS_REF_VALUE>Application:557805487</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/542\"></EntryAccount> \r\n<Lodged org_value=\"04/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Patio Cover\"></Details> \r\n<ApplicantName org_value=\"Jody
+        Andrew Booth\"></ApplicantName> \r\n<PropertyDescription org_value=\"30 John
+        Verge Avenue  RUTHERFORD  NSW  2320\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"425/1051221\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"19900.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557812950</id> \r\n<BAS_REF_VALUE>Application:557812950</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/543\"></EntryAccount> \r\n<Lodged org_value=\"04/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling - Single Storey\"></Details> \r\n<ApplicantName
+        org_value=\"Owen Mhlanga\"></ApplicantName> \r\n<PropertyDescription org_value=\"2
+        Collaroy Parade  LOUTH PARK  NSW  2320\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"130/1251415\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"570760.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557864170</id> \r\n<BAS_REF_VALUE>Application:557864170</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/544\"></EntryAccount> \r\n<Lodged org_value=\"04/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling alteration/addition (attached)\"></Details>
+        \r\n<ApplicantName org_value=\"Karl Ernest Bagnall\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"21 Young Street  EAST MAITLAND  NSW  2323\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"91/857970\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"40000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557602128</id> \r\n<BAS_REF_VALUE>Application:557602128</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/567\"></EntryAccount> \r\n<Lodged org_value=\"03/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling - Single Storey \"></Details> \r\n<ApplicantName
+        org_value=\"Corey Wayne Rumbel\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"24 Lancaster Street  THORNTON  NSW  2322\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"520/1248342\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"292420.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557610893</id> \r\n<BAS_REF_VALUE>Application:557610893</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/568\"></EntryAccount> \r\n<Lodged org_value=\"03/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling - Two Storey\"></Details> \r\n<ApplicantName
+        org_value=\"Anthony Paul Rampling\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"5 Collaroy Parade  LOUTH PARK  NSW  2320\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"104/1251415\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"542960.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557619612</id> \r\n<BAS_REF_VALUE>Application:557619612</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CDC/2019/316\"></EntryAccount> \r\n<Lodged org_value=\"03/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Swimming Pool\"></Details> \r\n<ApplicantName org_value=\"Andrew
+        James Fernando\"></ApplicantName> \r\n<PropertyDescription org_value=\"65
+        Barr Promenade  THORNTON  NSW  2322\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"2086/1219370\"></TitleDescription> \r\n<Determined org_value=\"01/07/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"24160.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557595556</id> \r\n<BAS_REF_VALUE>Application:557595556</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/538\"></EntryAccount> \r\n<Lodged org_value=\"03/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling house\"></Details> \r\n<ApplicantName org_value=\"Rawson
+        Homes Pty Ltd\"></ApplicantName> \r\n<PropertyDescription org_value=\"101
+        Billabong Parade  CHISHOLM  NSW  2322\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"603/1240613\"></TitleDescription> \r\n<Determined org_value=\"28/05/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"443540.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557601339</id> \r\n<BAS_REF_VALUE>Application:557601339</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/539\"></EntryAccount> \r\n<Lodged org_value=\"03/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling house\"></Details> \r\n<ApplicantName org_value=\"Metricon
+        Homes\"></ApplicantName> \r\n<PropertyDescription org_value=\"2 Red Arrow
+        Close  CHISHOLM  NSW  2322\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"1013/1242456\"></TitleDescription> \r\n<Determined org_value=\"27/05/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"658537.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557602373</id> \r\n<BAS_REF_VALUE>Application:557602373</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/540\"></EntryAccount> \r\n<Lodged org_value=\"03/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling - Single Storey \"></Details> \r\n<ApplicantName
+        org_value=\"Corey Wayne Rumbel\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"24 Lancaster Street  THORNTON  NSW  2322\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"520/1248342\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"292420.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557610958</id> \r\n<BAS_REF_VALUE>Application:557610958</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/541\"></EntryAccount> \r\n<Lodged org_value=\"03/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling - Two Storey\"></Details> \r\n<ApplicantName
+        org_value=\"Anthony Paul Rampling\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"5 Collaroy Parade  LOUTH PARK  NSW  2320\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"104/1251415\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"542960.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557683923</id> \r\n<BAS_REF_VALUE>Application:557683923</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"SM2019/15\"></EntryAccount> \r\n<Lodged org_value=\"03/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Septic Tank\"></Details> \r\n<ApplicantName org_value=\"Mark
+        Eddy Building Pty Ltd\"></ApplicantName> \r\n<PropertyDescription org_value=\"45
+        Cantwell Road  LOCHINVAR  NSW  2321\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"66/837392\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"0.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557413637</id> \r\n<BAS_REF_VALUE>Application:557413637</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/565\"></EntryAccount> \r\n<Lodged org_value=\"02/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling Alterations/Additions - Shed and Deck \"></Details>
+        \r\n<ApplicantName org_value=\"Vivid Design and Planning\"></ApplicantName>
+        \r\n<PropertyDescription org_value=\"13 Lucy Place  RAWORTH  NSW  2321\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"206/1232577\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"89000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557468692</id> \r\n<BAS_REF_VALUE>Application:557468692</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/566\"></EntryAccount> \r\n<Lodged org_value=\"02/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Alterations and Additions to Existing Public School
+        (Ashtonfield) \"></Details> \r\n<ApplicantName org_value=\"Axiom Education
+        NSW No.2 Pty Ltd\"></ApplicantName> \r\n<PropertyDescription org_value=\"3
+        Norfolk Street  ASHTONFIELD  NSW  2323\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"1/1132252\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"1.3154562E7\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557325465</id> \r\n<BAS_REF_VALUE>Application:557325465</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/535\"></EntryAccount> \r\n<Lodged org_value=\"02/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Swimming Pool\"></Details> \r\n<ApplicantName org_value=\"Jonathon
+        Cecil Carlson\"></ApplicantName> \r\n<PropertyDescription org_value=\"22 Fitzroy
+        Street  EAST MAITLAND  NSW  2323, 20 Fitzroy Street  EAST MAITLAND  NSW  2323\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"1/194236, 2/1007552\"></TitleDescription>
+        \r\n<Determined org_value=\"01/07/2019\"></Determined> \r\n<DeterminationCode
+        org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue org_value=\"25520.0\"></WorkValue>
+        \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557413690</id> \r\n<BAS_REF_VALUE>Application:557413690</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/536\"></EntryAccount> \r\n<Lodged org_value=\"02/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling Alterations/Additions - Shed and Deck \"></Details>
+        \r\n<ApplicantName org_value=\"Vivid Design and Planning\"></ApplicantName>
+        \r\n<PropertyDescription org_value=\"13 Lucy Place  RAWORTH  NSW  2321\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"206/1232577\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"89000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557445213</id> \r\n<BAS_REF_VALUE>Application:557445213</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/537\"></EntryAccount> \r\n<Lodged org_value=\"02/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling Single Storey \"></Details> \r\n<ApplicantName
+        org_value=\"Vision Homes Pty Ltd\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"47 Grand Parade  RUTHERFORD  NSW  2320\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"116/280047\"></TitleDescription> \r\n<Determined
+        org_value=\"02/07/2019\"></Determined> \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"325000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557042470</id> \r\n<BAS_REF_VALUE>Application:557042470</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/558\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling - Single Storey \"></Details> \r\n<ApplicantName
+        org_value=\"Manju John and Mathew Joseph\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"3 Angelica  Road  CHISHOLM  NSW  2322\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"47/1240315\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"397435.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557068620</id> \r\n<BAS_REF_VALUE>Application:557068620</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/559\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling - Single Storey\"></Details> \r\n<ApplicantName
+        org_value=\"Tom Randall and Barbara Clare Randall\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"25 Irma Place  LOCHINVAR  NSW  2321\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"122/1252311\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"432000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557100115</id> \r\n<BAS_REF_VALUE>Application:557100115</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/560\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Tree Application\"></Details> \r\n<ApplicantName
+        org_value=\"Darren James\"></ApplicantName> \r\n<PropertyDescription org_value=\"18
+        Bairds Close  RUTHERFORD  NSW  2320\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"215/1001120\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"0.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557103641</id> \r\n<BAS_REF_VALUE>Application:557103641</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/561\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Change of use of premises - Dwelling to Group Home
+        (Permanent)\"></Details> \r\n<ApplicantName org_value=\"Perception Planning\"></ApplicantName>
+        \r\n<PropertyDescription org_value=\"43 Ferraby Drive  METFORD  NSW  2323\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"8730/1076038\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"10000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557110233</id> \r\n<BAS_REF_VALUE>Application:557110233</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/562\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Shed\"></Details> \r\n<ApplicantName org_value=\"Jeff
+        Robinson\"></ApplicantName> \r\n<PropertyDescription org_value=\"14 Kilkenny
+        Circuit  ASHTONFIELD  NSW  2323\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"242/842546\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"18000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557110491</id> \r\n<BAS_REF_VALUE>Application:557110491</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/563\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Shed\"></Details> \r\n<ApplicantName org_value=\"Jeff
+        Robinson\"></ApplicantName> \r\n<PropertyDescription org_value=\"67 Tarragon
+        Way  CHISHOLM  NSW  2322\"></PropertyDescription> \r\n<TitleDescription org_value=\"618/1232506\"></TitleDescription>
+        \r\n<Determined org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"13000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557121673</id> \r\n<BAS_REF_VALUE>Application:557121673</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"DA/2019/564\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Tree Application\"></Details> \r\n<ApplicantName
+        org_value=\"Kairsten Stuhr Marley\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"14 Cross Street  SOUTH MAITLAND  NSW  2320\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"4/793323\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"0.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557034965</id> \r\n<BAS_REF_VALUE>Application:557034965</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CDC/2019/313\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling house\"></Details> \r\n<ApplicantName org_value=\"Ian
+        and Judith Healy\"></ApplicantName> \r\n<PropertyDescription org_value=\"3
+        Carey Close  LOUTH PARK  NSW  2320\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"120/1251415\"></TitleDescription> \r\n<Determined org_value=\"01/07/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"395685.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557043917</id> \r\n<BAS_REF_VALUE>Application:557043917</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CDC/2019/314\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Swimming Pool\"></Details> \r\n<ApplicantName org_value=\"Andrew
+        Stork\"></ApplicantName> \r\n<PropertyDescription org_value=\"29 Percher Street
+        \ CHISHOLM  NSW  2322\"></PropertyDescription> \r\n<TitleDescription org_value=\"2613/1236585\"></TitleDescription>
+        \r\n<Determined org_value=\"01/07/2019\"></Determined> \r\n<DeterminationCode
+        org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue org_value=\"27340.0\"></WorkValue>
+        \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557079740</id> \r\n<BAS_REF_VALUE>Application:557079740</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CDC/2019/315\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling house\"></Details> \r\n<ApplicantName org_value=\"Simon
+        Charles Frazer\"></ApplicantName> \r\n<PropertyDescription org_value=\"11
+        Harlington Avenue  FARLEY  NSW  2320\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"16/1247830\"></TitleDescription> \r\n<Determined org_value=\"21/06/2019\"></Determined>
+        \r\n<DeterminationCode org_value=\"Approved\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"346436.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557042673</id> \r\n<BAS_REF_VALUE>Application:557042673</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/530\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Dwelling - Single Storey \"></Details> \r\n<ApplicantName
+        org_value=\"Manju John and Mathew Joseph\"></ApplicantName> \r\n<PropertyDescription
+        org_value=\"3 Angelica  Road  CHISHOLM  NSW  2322\"></PropertyDescription>
+        \r\n<TitleDescription org_value=\"47/1240315\"></TitleDescription> \r\n<Determined
+        org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"397435.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557099282</id> \r\n<BAS_REF_VALUE>Application:557099282</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/532\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Secondary dwelling\"></Details> \r\n<ApplicantName
+        org_value=\"Craig Crouch\"></ApplicantName> \r\n<PropertyDescription org_value=\"14
+        High Street  MORPETH  NSW  2321\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"1/28032\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"84140.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557110346</id> \r\n<BAS_REF_VALUE>Application:557110346</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/533\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Shed\"></Details> \r\n<ApplicantName org_value=\"Jeff
+        Robinson\"></ApplicantName> \r\n<PropertyDescription org_value=\"14 Kilkenny
+        Circuit  ASHTONFIELD  NSW  2323\"></PropertyDescription> \r\n<TitleDescription
+        org_value=\"242/842546\"></TitleDescription> \r\n<Determined org_value=\"\"></Determined>
+        \r\n<DeterminationCode org_value=\"\"></DeterminationCode> \r\n<WorkValue
+        org_value=\"18000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
+        \r\n</row> \r\n<row> \r\n<id>557110582</id> \r\n<BAS_REF_VALUE>Application:557110582</BAS_REF_VALUE>
+        \r\n<EntryAccount org_value=\"CC/2019/534\"></EntryAccount> \r\n<Lodged org_value=\"01/07/2019\"></Lodged>
+        \r\n<Details org_value=\"Shed\"></Details> \r\n<ApplicantName org_value=\"Jeff
+        Robinson\"></ApplicantName> \r\n<PropertyDescription org_value=\"67 Tarragon
+        Way  CHISHOLM  NSW  2322\"></PropertyDescription> \r\n<TitleDescription org_value=\"618/1232506\"></TitleDescription>
+        \r\n<Determined org_value=\"\"></Determined> \r\n<DeterminationCode org_value=\"\"></DeterminationCode>
+        \r\n<WorkValue org_value=\"13000.0\"></WorkValue> \r\n<BAS_PROTECTED>Lodged</BAS_PROTECTED>\r\n<BAS_OPER_APPLICABILITY></BAS_OPER_APPLICABILITY>
         \r\n</row> \r\n</dataset> \r\n<query_string>FIND Applications WHERE Applications.ApplicationTypeID.IsAvailableOnline='Yes'
         AND Applications.CanDisclose='Yes' AND NOT(Applications.StatusName IN 'Pending',
-        'Cancelled') AND WEEK(Applications.Lodged)=CURRENT_WEEK-1 AND YEAR(Applications.Lodged)=CURRENT_YEAR
+        'Cancelled') AND MONTH(Applications.Lodged)=CURRENT_MONTH AND YEAR(Applications.Lodged)=CURRENT_YEAR
         AND Application.ApplicationTypeID.Classification='Application' ORDER BY Applications.Lodged
         DESC</query_string> \r\n</run_query_action_success> \r\n</run_query_action_return>
         \r\n</root> \r\n"
